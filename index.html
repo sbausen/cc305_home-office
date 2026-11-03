@@ -243,7 +243,7 @@ tr.weekend-row td{opacity:.85;}
 
 <div class="sheet">
   <header>
-    <span class="eyebrow">Outubro 2026</span>
+    <span class="eyebrow">Novembro 2026</span>
     <h1>Escala Home Office — WMS</h1>
     <span class="sub">Simone, Thaylan, Gabriel &amp; Carolina</span>
     <span class="hint"><i class="dot" id="sync-dot" data-state="offline"></i>Toque em Presencial ou Home office pra trocar — sincroniza pra todo mundo</span>
@@ -262,7 +262,7 @@ tr.weekend-row td{opacity:.85;}
     </div>
   </div>
 
-  <div class="month" id="month-out">
+  <div class="month" id="month-nov">
     <div class="table-wrap">
       <table>
         <thead>
@@ -274,10 +274,10 @@ tr.weekend-row td{opacity:.85;}
             <th>Carolina</th>
           </tr>
         </thead>
-        <tbody id="body-out"></tbody>
+        <tbody id="body-nov"></tbody>
       </table>
     </div>
-    <footer>21 dias úteis · 5 finais de semana · 1 feriado (12 de outubro, Nossa Senhora Aparecida) · todo mundo presencial por padrão, ajustar conforme necessário</footer>
+    <footer>19 dias úteis · 9 dias de fim de semana · 2 feriados (2 de novembro, Finados; 20 de novembro, Consciência Negra) · todo mundo presencial por padrão, ajustar conforme necessário</footer>
   </div>
 </div>
 
@@ -290,38 +290,37 @@ function mkDay(iso, date, status){
   return [iso, date, status];
 }
 
-const outubro = [
-mkDay("2026-10-01","quinta-feira, 1 de outubro","presencial"),
-mkDay("2026-10-02","sexta-feira, 2 de outubro","presencial"),
-mkDay("2026-10-03","sábado, 3 de outubro","weekend"),
-mkDay("2026-10-04","domingo, 4 de outubro","weekend"),
-mkDay("2026-10-05","segunda-feira, 5 de outubro","presencial"),
-mkDay("2026-10-06","terça-feira, 6 de outubro","presencial"),
-mkDay("2026-10-07","quarta-feira, 7 de outubro","presencial"),
-mkDay("2026-10-08","quinta-feira, 8 de outubro","presencial"),
-mkDay("2026-10-09","sexta-feira, 9 de outubro","presencial"),
-mkDay("2026-10-10","sábado, 10 de outubro","weekend"),
-mkDay("2026-10-11","domingo, 11 de outubro","weekend"),
-mkDay("2026-10-12","segunda-feira, 12 de outubro","feriado"),
-mkDay("2026-10-13","terça-feira, 13 de outubro","presencial"),
-mkDay("2026-10-14","quarta-feira, 14 de outubro","presencial"),
-mkDay("2026-10-15","quinta-feira, 15 de outubro","presencial"),
-mkDay("2026-10-16","sexta-feira, 16 de outubro","presencial"),
-mkDay("2026-10-17","sábado, 17 de outubro","weekend"),
-mkDay("2026-10-18","domingo, 18 de outubro","weekend"),
-mkDay("2026-10-19","segunda-feira, 19 de outubro","presencial"),
-mkDay("2026-10-20","terça-feira, 20 de outubro","presencial"),
-mkDay("2026-10-21","quarta-feira, 21 de outubro","presencial"),
-mkDay("2026-10-22","quinta-feira, 22 de outubro","presencial"),
-mkDay("2026-10-23","sexta-feira, 23 de outubro","presencial"),
-mkDay("2026-10-24","sábado, 24 de outubro","weekend"),
-mkDay("2026-10-25","domingo, 25 de outubro","weekend"),
-mkDay("2026-10-26","segunda-feira, 26 de outubro","presencial"),
-mkDay("2026-10-27","terça-feira, 27 de outubro","presencial"),
-mkDay("2026-10-28","quarta-feira, 28 de outubro","presencial"),
-mkDay("2026-10-29","quinta-feira, 29 de outubro","presencial"),
-mkDay("2026-10-30","sexta-feira, 30 de outubro","presencial"),
-mkDay("2026-10-31","sábado, 31 de outubro","weekend"),
+const novembro = [
+mkDay("2026-11-01","domingo, 1 de novembro","weekend"),
+mkDay("2026-11-02","segunda-feira, 2 de novembro","feriado"),
+mkDay("2026-11-03","terça-feira, 3 de novembro","presencial"),
+mkDay("2026-11-04","quarta-feira, 4 de novembro","presencial"),
+mkDay("2026-11-05","quinta-feira, 5 de novembro","presencial"),
+mkDay("2026-11-06","sexta-feira, 6 de novembro","presencial"),
+mkDay("2026-11-07","sábado, 7 de novembro","weekend"),
+mkDay("2026-11-08","domingo, 8 de novembro","weekend"),
+mkDay("2026-11-09","segunda-feira, 9 de novembro","presencial"),
+mkDay("2026-11-10","terça-feira, 10 de novembro","presencial"),
+mkDay("2026-11-11","quarta-feira, 11 de novembro","presencial"),
+mkDay("2026-11-12","quinta-feira, 12 de novembro","presencial"),
+mkDay("2026-11-13","sexta-feira, 13 de novembro","presencial"),
+mkDay("2026-11-14","sábado, 14 de novembro","weekend"),
+mkDay("2026-11-15","domingo, 15 de novembro","weekend"),
+mkDay("2026-11-16","segunda-feira, 16 de novembro","presencial"),
+mkDay("2026-11-17","terça-feira, 17 de novembro","presencial"),
+mkDay("2026-11-18","quarta-feira, 18 de novembro","presencial"),
+mkDay("2026-11-19","quinta-feira, 19 de novembro","presencial"),
+mkDay("2026-11-20","sexta-feira, 20 de novembro","feriado"),
+mkDay("2026-11-21","sábado, 21 de novembro","weekend"),
+mkDay("2026-11-22","domingo, 22 de novembro","weekend"),
+mkDay("2026-11-23","segunda-feira, 23 de novembro","presencial"),
+mkDay("2026-11-24","terça-feira, 24 de novembro","presencial"),
+mkDay("2026-11-25","quarta-feira, 25 de novembro","presencial"),
+mkDay("2026-11-26","quinta-feira, 26 de novembro","presencial"),
+mkDay("2026-11-27","sexta-feira, 27 de novembro","presencial"),
+mkDay("2026-11-28","sábado, 28 de novembro","weekend"),
+mkDay("2026-11-29","domingo, 29 de novembro","weekend"),
+mkDay("2026-11-30","segunda-feira, 30 de novembro","presencial"),
 ];
 
 const LABELS = {presencial:"Presencial", homeoffice:"Home office", feriado:"Feriado", weekend:"Final de Semana"};
@@ -360,7 +359,7 @@ function render(rows, elId){
     });
   });
 }
-render(outubro, "body-out");
+render(novembro, "body-nov");
 
 const rowsAll = [...document.querySelectorAll("tbody tr")];
 const tabUpcoming = document.getElementById("tab-upcoming");
